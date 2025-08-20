@@ -1,0 +1,161 @@
+/* global style */
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-header {
+  padding: 0;
+  background: #001529;
+}
+
+.app-content {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: calc(100vh - 64px);
+}
+
+/* navbar style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 64px;
+}
+
+.navbar-brand h2 {
+  color: white;
+  margin: 0;
+}
+
+.navbar-menu {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 24px;
+}
+
+.navbar-user .user-button {
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-user .username {
+  margin-left: 8px;
+}
+
+/* login register page style */
+.login-container,
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-card,
+.register-card {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.login-header,
+.register-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.login-links,
+.register-links {
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* loading animation */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+}
+
+/* 仪表板样式 */
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.quick-actions .ant-btn {
+  height: 48px;
+  font-size: 16px;
+}
+
+/* stock list style */
+.stock-list-header {
+  margin-bottom: 24px;
+}
+
+.search-section {
+  margin-top: 16px;
+}
+
+.favorites-section {
+  margin-top: 24px;
+}
+
+/* stock detail style */
+.stock-header .current-price {
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.price-change {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.price-change.positive {
+  color: #52c41a;
+}
+
+.price-change.negative {
+  color: #f5222d;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+  .app-content {
+    padding: 16px;
+  }
+  
+  .navbar {
+    padding: 0 16px;
+  }
+  
+  .navbar-brand h2 {
+    font-size: 18px;
+  }
+  
+  .navbar-menu {
+    display: none;
+  }
+  
+  .stock-header .current-price {
+    font-size: 24px;
+  }
+  
+  .price-change {
+    font-size: 16px;
+  }
+} 
